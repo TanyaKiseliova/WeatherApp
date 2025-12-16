@@ -1,0 +1,235 @@
+// $main_color: #46388d
+$main_color: #611c86
+$main_border: 2px solid $main_color 	
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap')
+
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	color: #fff
+	font-family: 'Bad Script'
+
+
+html, body
+	height: 100%
+
+body
+	display: flex
+	align-items: center
+	justify-content: center
+	background: #190d30
+	
+
+	gap: 20px
+
+	@media (max-width: 500px)
+		flex-direction: column
+
+ul,li
+	list-style: none
+
+.menu
+	width: 400px
+	height: 750px
+	border: $main_border
+	border-radius: 20px
+	padding: 20px
+	display: flex
+	flex-direction: column
+	gap: 20px
+	font-size: 25px
+	color: blue
+	background: #54d7cc5f
+
+	@media (max-width: 800px)
+	font-size: 18px
+
+	&__search
+		width: 100%
+		position: relative
+	&__input
+		width: 100%
+		padding: 10px 50px 10px 10px
+		font-size: 18px
+		outline: none
+		border: none
+		border-radius: 5px
+		color: black
+	&__send
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 10px
+		font-size: 30px
+		display: flex
+		align-items: center
+		justify-content: center
+		border: none
+		transition: 0.25s
+		background: transparent
+		.fa-square-arrow-up-right
+			color: black
+			&:hover
+				color: #611c86
+	@media (max-width: 1200px)
+		width: 200px
+
+.weather
+	position: relative
+	width: 800px
+	height: 750px
+	border: $main_border
+	border-radius: 20px
+	padding: 20px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-direction: column
+	gap: 20px
+
+	@media (max-width: 1400px)
+		width: 500px
+
+	@media (max-width: 1200px)
+		width: 400px
+		padding: 10px
+		gap: 5px
+
+	@media (max-width: 700px)
+		width: 250px
+
+
+
+	&__current
+		width: 100%
+		gap: 20px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		position: relative
+
+		@media (max-width: 1200px)
+			height: 250px
+			gap: 5px
+
+		@media (max-width: 500px)
+			height: 150px
+
+
+		
+
+
+	&__title
+		font-size: 50px
+		@media (max-width: 1200px)
+			font-size: 30px
+	&__info
+		width: 100%
+		height: 230px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+
+		@media (max-width: 1200px)
+			height: 150px
+
+		@media (max-width: 500px)
+			flex-direction: row
+			gap: 30px
+			height: 50px
+
+	&__temp
+		font-size: 60px
+		@media (max-width: 1200px)
+			font-size: 35px
+
+	&__icon
+		width: 90px
+		height: 90px
+		font-size: 90px
+		@media (max-width: 1200px)
+			width: 50px
+			height: 50px
+			font-size: 50px
+			
+		.fa-solid
+			color: #24c8b5
+
+	&__block
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: start
+		flex-direction: column
+		border: $main_border
+		border-radius: 20px
+		background: #54d7cc5f
+
+		@media (max-width: 1200px)
+			height: 450px
+			
+	&__title2
+		margin: 10px
+		font-size: 20px
+
+	&__wind-block
+		height: 70px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		@media (max-width: 1200px)
+			font-size: 16px
+		
+
+.bi
+	color: black
+
+	
+.week
+	width: 750px
+	padding: 20px
+	display: flex
+	align-items: center
+	justify-content: center
+	gap: 30px
+
+	@media (max-width: 1400px)
+		width: 100%
+
+	@media (max-width: 1200px)
+		flex-wrap: wrap
+		gap: 20px
+
+	&__day
+		width: 120px
+		height: 120px
+		background: #541a74
+		border-radius: 10px
+		border: $main_border
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		gap: 5px
+		padding: 5px
+		
+		@media (max-width: 1400px)
+			width: 90px
+			height: 100px
+
+		@media (max-width: 1200px)
+			height: 120px
+			gap: 0px
+			font-size: 14px
+
+		@media (max-width: 700px)
+			height: 90px
+			width: 80px
+
+
+

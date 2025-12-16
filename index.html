@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Weather App</title>
+	<link rel="icon" type="image/x-icon" href="img/iconGif2.gif">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+	<div class="loader">
+		<span class="loader-text">loading</span>
+		<span class="load"></span>
+	</div>
+
+	<div class="menu">
+
+		<div class="menu__search">
+			<input type="text" class="menu__input" />
+			<button class="menu__send">
+				<i class="fa-solid fa-square-arrow-up-right"></i>
+			</button>
+		</div>
+
+		<div class="menu__history history">
+			<h3 class="history__title">Previous search</h3>
+			<ul class="history__list"></ul>
+
+		</div>
+	</div>
+
+
+	<div class="weather">
+
+		<div class="main-btn active">main</div>
+		<div class="graph-btn">graph</div>
+
+		<div class="weather__main active">
+			<div class="weather__current">
+
+				<h2 class="weather__title">BY, Minsk</h2>
+
+				<label for="switch" class="switch">
+					<input id="switch" type="checkbox" />
+					<span class="slider"></span>
+					<span class="decoration"></span>
+				</label>
+
+				<div class="weather__fav-but">to ♡</div>
+
+				<div class="weather__info">
+					<div class="weather__icon">
+						<i class="fa-solid fa-sun"></i>
+					</div>
+					<div class="weather__t-bl">
+						<p class="weather__temp">day: 19°</p>
+						<p class="weather__temp-night">night: 19°</p>
+					</div>
+
+					<div class="weather__wind-block">
+						<div class="weather__speed"></div>
+						<div class="weather__direction"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="weather__block">
+				<h3 class="weather__title2">Weather for the next several days</h3>
+				<ul class="weather__week week">
+					<li class="week__day"></li>
+					<li class="week__day"></li>
+					<li class="week__day"></li>
+					<li class="week__day"></li>
+					<li class="week__day"></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="weather__graph">
+			<div class="g">
+				<div class="g1">
+					<h3 class="text">Temperature for the next 5 days</h3>
+					<canvas id="tempChart"></canvas>
+				</div>
+
+
+				<div class="g2">
+					<h3 class="text">Temperature this day</h3>
+					<canvas id="tempChart2"></canvas>
+				</div>
+			</div>
+			<div class="weather__add-info">
+				<div class="weather__feel"><i class="bi bi-person-lines-fill"></i> currnt weather feels like:</div>
+				<div class="weather__hum"> <i class="bi bi-moisture"></i><span> humidity:</span></div>
+				<div class="weather__press"> <i class="bi bi-thermometer"></i> pressure: </div>
+				<div class="weather__sunrize"> <i class="bi bi-sunrise"></i> sunrize:</div>
+				<div class="weather__sunset"><i class="bi bi-sunset"></i> sunset:</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="block3">
+		<div class="favorites">
+			<h3 class="fav">Your favourite cities</h3>
+			<ul class="fav__list"></ul>
+		</div>
+
+		<div class="diagram">
+			<h3 class="fav">Temperature graphic for the next 5 days</h3>
+			<canvas id="temperatureChart" width="350" height="300"></canvas>
+		</div>
+	</div>
+
+
+	<script src="https://kit.fontawesome.com/14b93aa850.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5/dist/chart.umd.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
