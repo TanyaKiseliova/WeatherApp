@@ -2,7 +2,7 @@
 
 includes weather for day and night and for the next 5 days, graphics, history of search and favorite cities
 
-**Live Demo** : [deployed project on Vercel](https://weather-app-blue-eta-89.vercel.app/)
+**Live Demo** : [deployed project on Vercel](https://weather-app-five-sandy-ml1jbkty90.vercel.app/)
 
 --- 
 ## 🛠️ Used technologies
